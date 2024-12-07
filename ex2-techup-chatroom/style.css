@@ -1,1 +1,103 @@
-/* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #808080;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .message-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .message {
+    position: relative;
+    padding: 10px 40px 10px 15px;
+    border-radius: 20px;
+    max-width: 300px;
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  .message.light-gray {
+    background-color: #d3d3d3;
+    color: black;
+    align-self: flex-end; 
+    width: 300px; 
+    position: relative; 
+    padding: 10px 40px 10px 15px; 
+    border-radius: 20px;
+  }
+  
+  .message.green {
+    background-color: #28a745;
+    color: white;
+    align-self: flex-end;
+    width: 300px; 
+  }
+  
+  .green-tail {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #28a745;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #808080;
+    border: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+    
+.emoji-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start
+  }
+  
+  .emoji-button {
+    background-color: #808080;
+    color: rgb(107, 105, 105);
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 300px
+  }
+  
